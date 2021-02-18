@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>delta shoes upload</title>
+	<!-- meta tags -->
+	<meta charset="UTF-8"> 
+     <!-- refresh docs -->
+    <meta http-equiv="refresh" content="30">
+    <!-- for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <!-- css -->
+	    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	    <!-- bootstrap -->
+	    <!-- linking to CDN -->
+	<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+
+        <!-- linking to local bootstrap -->
+        <!-- linking the bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <!-- grid -->
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css">
+        <!-- link to js -->
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	 <div class="container-fluid">
+     	<div id="item1">
+     		
+		           <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		  <a class="navbar-brand" href="../index.html">
+		  	
+              <img src="../images/logodelta.png" alt="Delta Shoes" width=""  height="">
+
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="../index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="color: white;">Upload Inventory</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+		          Show Inventory
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">All Products</a>
+		          <a class="dropdown-item" href="#">Boys</a>
+		          <a href="#" class="dropdown-item">Girls</a>
+		          <a href="#" class="dropdown-item">Ladies</a>
+		          <a href="#" class="dropdown-item">Men</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Show All categories</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="color: white;" >Settings</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+
+		<br>
+
+
+		<div class="container">
+		    <form action="#" method="post">
+		    	<h4 class="page-header" style="margin-bottom: 10px; padding: 5px;">Upload Shoe</h4>
+		    	<!-- div groups -->
+		    	<div class="row form-group">
+		    		<div class="col">
+		    			<input type="text" name="shoename" id="shoename" placeholder="Enter Shoe Name" class="form-control">
+		    		</div>
+		    		<div class="col">
+		    			<input type="number" name="price" id="price" placeholder="Enter Shoe Price(In KES.)" class="form-control">
+		    		</div>
+		    	</div>
+
+		    	<div class="row form-group">
+		    		<div class="col">
+		    			<label for="brand" style="margin-bottom: 10px; padding: 5px;">Shoe Brand</label>
+
+		    		    <select class="form-control" id="brand" name="brand" >
+		    		    	<option value="general">General</option>
+                            <option value="addidas">Addidas</option>
+                            <option value="nike">Nike</option>
+                            <option value="puma">Puma</option>
+		    		    </select>
+		    		</div>
+		    		<div class="col">
+		    		   <label for="image" style="margin-bottom: 10px; padding: 5px;">Shoe Image</label>
+
+		    			<input type="file" name="shoeimage" id="shoeimage"  class="form-control" multiple="">
+		    		</div>
+		    	</div>
+
+		    	<div class="row form-group">
+		    		<div class="col">
+		    			<input type="submit" class="btn btn-success btn-block" name="save" id="save" value="Upload Shoe">
+		    		</div>
+		    		<div class="col">
+		    		<input type="reset" class="btn btn-danger btn-block" name="save" id="save" value="Reset Form">
+
+		    		</div>
+		    	</div>
+
+
+		    	
+		    </form>	
+          
+		</div>
+
+
+
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

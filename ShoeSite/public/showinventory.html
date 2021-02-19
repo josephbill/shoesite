@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Inventory</title>
+		<!-- meta tags -->
+	<meta charset="UTF-8"> 
+     <!-- refresh docs -->
+    <meta http-equiv="refresh" content="120">
+    <!-- for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	    <!-- css -->
+<!-- 	    <link rel="stylesheet" type="text/css" href="../css/style.css">
+ -->	    <!-- bootstrap -->
+	    <!-- linking to CDN -->
+	<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> -->
+
+        <!-- linking to local bootstrap -->
+        <!-- linking the bootstrap css -->
+       <!--  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"> -->
+        <!-- grid -->
+     <!--    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css"> -->
+        <!-- link to js -->
+<!--         <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+	<br>
+   <div class="container-fluid">
+	           <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		  <a class="navbar-brand" href="../index.html">
+		  	
+              <img src="../images/logodelta.png" alt="Delta Shoes" width=""  height="">
+
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="../index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#" style="color: white;">Upload Inventory</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+		          Show Inventory
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">All Products</a>
+		          <a class="dropdown-item" href="#">Boys</a>
+		          <a href="#" class="dropdown-item">Girls</a>
+		          <a href="#" class="dropdown-item">Ladies</a>
+		          <a href="#" class="dropdown-item">Men</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Show All categories</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="staff.html" style="color: white;" >Staff</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>
+
+		<br>
+
+	</div>
+
+	<!-- define grid system  -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 col-md-2 col-lg-2 com-xl-2 " >
+                  <img src="../images/sneaker.png" alt="Delta Shoes" width="60" height="60" style="margin: auto; display: block;">
+                  <p class="lead" style="text-align: center;"><b>Filter Table</b></p>
+                   <!-- A vertical navbar -->
+						<nav class="navbar bg-dark" style="margin: 10px; padding: 10px;">
+
+						  <!-- Links -->
+						  <ul class="navbar-nav">
+						    <li class="nav-item">
+						      <a class="nav-link" href="#">Filter by Size</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#">Filter by Brand</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" href="#">Filter by Material</a>
+						    </li>
+						  </ul>
+
+						</nav> 
+	        </div>
+			<div class="col-sm col-md col-lg com-xl" style="">
+
+				<!-- table -->
+				<table class="table thead-dark">
+					<tr class="thead-dark">
+						<th >Shoe Name</th>
+						<th>Shoe Brand</th>
+						<th>Shoe Image</th>
+						<th>Show Price</th>
+						<th>Availabilty</th>
+						<th colspan="2">Action</th>
+					</tr>
+
+
+					<!-- define dummy data -->
+					<tr>
+						<td>Air Max 350</td>
+                        <td>Nike</td>
+                        <td>
+                        	<img src="../images/nike.jpg" alt="Air Max" width="80" height="80">
+                        </td>
+                        <td>KES 6000</td>
+                        <td>yes</td>
+                        <td>
+                        	<button type="button" class="btn btn-warning">Edit</button>
+                        	<button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+					</tr>
+
+						<tr>
+						<td>Heels</td>
+                        <td>Alexander</td>
+                        <td>
+                        	<img src="../images/heels.webp" alt="Heels" width="80" height="80">
+                        </td>
+                        <td>KES 5000</td>
+                        <td>no</td>
+                        <td>
+                        	<button type="button" class="btn btn-warning">Edit</button>
+                        	<button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+					</tr>
+
+
+
+				</table>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm col-md col-lg com-xl"> 
+				<div class="jumbotron" style="margin: 10px; background-color: white;">
+					<div class="container">
+
+						<img src="../images/sale.png" style="display: block; margin: auto;" width="100" height="100">
+						
+					</div>
+				</div>
+
+
+			</div>
+			<div class="col-sm col-md col-lg com-xl" > 
+				<p class="alert alert-success lead">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+				
+			</div>
+			<div class="col-sm col-md col-lg com-xl" > 
+				<div id="demo" class="carousel slide" data-ride="carousel" style="margin: 20px;">
+
+					  <!-- Indicators -->
+				<!-- 	  <ul class="carousel-indicators">
+					    <li data-target="#demo" data-slide-to="0" class="active"></li>
+					    <li data-target="#demo" data-slide-to="1"></li>
+					    <li data-target="#demo" data-slide-to="2"></li>
+					  </ul> -->
+
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="../images/vans.webp" style="margin: auto; display: block;" width="80" height="80" alt="Los Angeles">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="../images/nike.jpg" style="margin: auto; display: block;" width="80" height="80" alt="Chicago">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="../images/heels.webp" style="margin: auto; display: block;" width="80" height="80" alt="New York">
+					    </div>
+					  </div>
+
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					    <span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+					    <span class="carousel-control-next-icon"></span>
+					  </a>
+
+					</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>
